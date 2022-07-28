@@ -3,6 +3,7 @@ const buttonL = document.querySelector('.button-left')
 const buttonR = document.querySelector('.button-right')
 const burger = document.querySelector('.burger')
 const navH = document.querySelector('.nav-cont')
+const texT = document.querySelector('.small-gren-text')
 let width = 0
 let gap = 0
 let widthPgap = width + gap
@@ -13,6 +14,7 @@ const Zgrid = document.querySelector('.recom-grid')
 let Ww = window.innerWidth
 function resGrid(){
     console.log('res : ' + Ww)
+    
     Ww = window.innerWidth
     if(Ww >= 1290 ){
         width = 34
@@ -33,6 +35,7 @@ function resGrid(){
         max = - (5 * widthPgap)
         console.log('res 3'  + ' gap ' + gap + ' wid ' + width + ' max ' + max)
     }
+    texT.innerHTML = 'res : ' + Ww + ' gap ' + gap + ' wid ' + width + ' max ' + max
     widthPgap = width + gap
     //fixing
     grid.style.transform = 'translateX( 0 )';
@@ -55,10 +58,10 @@ function toogleH(directiony, scroll){
     if(directiony == 2 && scroll > 80 ){
         header.classList.add('hidden')
         navH.classList.remove("solo")
-        console.log(scroll + " driection " + directiony)
+        
         Pdirection = direction
     }else if (directiony == 1 && scroll > 80){
-        console.log(scroll + " direction  " + directiony)
+       
         header.classList.remove('hidden')
         Pdirection = direction
     }
@@ -72,10 +75,10 @@ function scrollH(){
     
     if( curscroll < pScroll){
         direction = 1
-        console.log(curscroll + " driection " + direction)
+       
     }else if(curscroll > pScroll){
         direction = 2
-        console.log(curscroll + " driection " + direction)
+       
     }
     if(direction !== Pdirection){
         toogleH(direction, curscroll)
