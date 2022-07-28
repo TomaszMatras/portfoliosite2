@@ -14,7 +14,7 @@ const Zgrid = document.querySelector('.recom-grid')
 let Ww = window.innerWidth
 function resGrid(){
     console.log('res : ' + Ww)
-    texT.innerHTML = 'res : ' + Ww
+  
     Ww = window.innerWidth
     if(Ww >= 1290 ){
         width = 34
