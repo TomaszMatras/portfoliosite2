@@ -14,7 +14,7 @@ const Zgrid = document.querySelector('.recom-grid')
 let Ww = window.innerWidth
 function resGrid(){
     console.log('res : ' + Ww)
-    
+    texT.innerHTML = 'res : ' + Ww
     Ww = window.innerWidth
     if(Ww >= 1290 ){
         width = 34
@@ -35,8 +35,7 @@ function resGrid(){
         max = - (5 * widthPgap)
         console.log('res 3'  + ' gap ' + gap + ' wid ' + width + ' max ' + max)
     }
-    texT.innerHTML = 'res : ' + Ww + ' gap ' + gap + ' wid ' + width + ' max ' + max
-    widthPgap = width + gap
+  widthPgap = width + gap
     //fixing
     grid.style.transform = 'translateX( 0 )';
     undim(buttonR)
