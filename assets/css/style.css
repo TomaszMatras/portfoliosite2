@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 :root{
     --color-text-green: #8bd19e;
     --color-background-like:  white;
@@ -322,7 +329,7 @@ header nav{
     display: -ms-grid;
     display: grid;
     gap: 1.4rem;
-     grid-template-areas: 
+         grid-template-areas: 
     'one one one two two three three'
     'one one one four five five five';
     position: relative;
@@ -1048,7 +1055,7 @@ footer .cont{
     }
     .zdjecia-grid{
         padding: 0 1rem;
-        grid-template-areas: 
+            grid-template-areas: 
         'one one   two '
         ' four four four '
         'three five five'
