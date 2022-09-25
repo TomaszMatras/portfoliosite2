@@ -595,6 +595,7 @@ header nav{
 }
 .button-left, .button-right{
     position: relative;
+    box-sizing: border-box;
     width: 100px;
     padding: 1rem 2rem;
     margin: 0 2rem;
