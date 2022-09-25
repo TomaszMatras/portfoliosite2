@@ -57,7 +57,7 @@ function toogleH(directiony, scroll){
     if(directiony == 2 && scroll > 80 ){
         header.classList.add('hidden')
         navH.classList.remove("solo")
-        
+        burger.classList.remove("active")
         Pdirection = direction
     }else if (directiony == 1 && scroll > 80){
        
